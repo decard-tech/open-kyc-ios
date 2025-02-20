@@ -1,0 +1,3250 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpenKYCWebViewControllerDelegate",
+        "printedName": "OpenKYCWebViewControllerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "openKYCWebViewController",
+            "printedName": "openKYCWebViewController(_:didReceiveMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebViewController",
+                "printedName": "OpenKYC.OpenKYCWebViewController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegateP04opencdE0_17didReceiveMessageyAA0acdE0C_SStF",
+            "mangledName": "$s7OpenKYC0A28KYCWebViewControllerDelegateP04opencdE0_17didReceiveMessageyAA0acdE0C_SStF",
+            "moduleName": "OpenKYC",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openKYCWebViewController",
+            "printedName": "openKYCWebViewController(_:didReceiveDeepLink:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebViewController",
+                "printedName": "OpenKYC.OpenKYCWebViewController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegateP04opencdE0_18didReceiveDeepLinkyAA0acdE0C_10Foundation3URLVtF",
+            "mangledName": "$s7OpenKYC0A28KYCWebViewControllerDelegateP04opencdE0_18didReceiveDeepLinkyAA0acdE0C_10Foundation3URLVtF",
+            "moduleName": "OpenKYC",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openKYCWebViewController",
+            "printedName": "openKYCWebViewController(_:didReceiveMessage:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebViewController",
+                "printedName": "OpenKYC.OpenKYCWebViewController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegateP04opencdE0_17didReceiveMessage7payloadyAA0acdE0C_SSSDySSypGSgtF",
+            "mangledName": "$s7OpenKYC0A28KYCWebViewControllerDelegateP04opencdE0_17didReceiveMessage7payloadyAA0acdE0C_SSSDySSypGSgtF",
+            "moduleName": "OpenKYC",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openKYCWebViewController",
+            "printedName": "openKYCWebViewController(_:didReceiveMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebViewController",
+                "printedName": "OpenKYC.OpenKYCWebViewController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegatePAAE04opencdE0_17didReceiveMessageyAA0acdE0C_SStF",
+            "mangledName": "$s7OpenKYC0A28KYCWebViewControllerDelegatePAAE04opencdE0_17didReceiveMessageyAA0acdE0C_SStF",
+            "moduleName": "OpenKYC",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openKYCWebViewController",
+            "printedName": "openKYCWebViewController(_:didReceiveDeepLink:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebViewController",
+                "printedName": "OpenKYC.OpenKYCWebViewController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegatePAAE04opencdE0_18didReceiveDeepLinkyAA0acdE0C_10Foundation3URLVtF",
+            "mangledName": "$s7OpenKYC0A28KYCWebViewControllerDelegatePAAE04opencdE0_18didReceiveDeepLinkyAA0acdE0C_10Foundation3URLVtF",
+            "moduleName": "OpenKYC",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openKYCWebViewController",
+            "printedName": "openKYCWebViewController(_:didReceiveMessage:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebViewController",
+                "printedName": "OpenKYC.OpenKYCWebViewController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegatePAAE04opencdE0_17didReceiveMessage7payloadyAA0acdE0C_SSSDySSypGSgtF",
+            "mangledName": "$s7OpenKYC0A28KYCWebViewControllerDelegatePAAE04opencdE0_17didReceiveMessage7payloadyAA0acdE0C_SSSDySSypGSgtF",
+            "moduleName": "OpenKYC",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : OpenKYC.OpenKYCWebViewControllerDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegateP",
+        "mangledName": "$s7OpenKYC0A28KYCWebViewControllerDelegateP",
+        "moduleName": "OpenKYC",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpenKYCWebViewController",
+        "printedName": "OpenKYCWebViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "webView",
+            "printedName": "webView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0Cvp",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0Cvp",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "Custom",
+              "Lazy",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0Cvg",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0Cvg",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0Cvs",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0Cvs",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0CvM",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0CvM",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any OpenKYC.OpenKYCWebViewControllerDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvp",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvp",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OpenKYC.OpenKYCWebViewControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpenKYCWebViewControllerDelegate",
+                        "printedName": "any OpenKYC.OpenKYCWebViewControllerDelegate",
+                        "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvg",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvg",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OpenKYC.OpenKYCWebViewControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpenKYCWebViewControllerDelegate",
+                        "printedName": "any OpenKYC.OpenKYCWebViewControllerDelegate",
+                        "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvs",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvs",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvM",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8delegateAA0acdE8Delegate_pSgvM",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController(im)viewDidLoad",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC11viewDidLoadyyF",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A20KYCWebViewControllerC4load7requesty10Foundation10URLRequestV_tF",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC4load7requesty10Foundation10URLRequestV_tF",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectClose",
+            "printedName": "selectClose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController(im)selectClose",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC11selectCloseyyF",
+            "moduleName": "OpenKYC",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebViewController",
+                "printedName": "OpenKYC.OpenKYCWebViewController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC011userContentE0_10didReceiveySo06WKUsergE0C_So15WKScriptMessageCtF",
+            "moduleName": "OpenKYC",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0_15decidePolicyFor15decisionHandlerySo05WKWebD0C_So18WKNavigationActionCySo0mnH0VctF",
+            "moduleName": "OpenKYC",
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:preferences:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebpagePreferences",
+                "printedName": "WebKit.WKWebpagePreferences",
+                "usr": "c:objc(cs)WKWebpagePreferences"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy, WebKit.WKWebpagePreferences) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(WebKit.WKNavigationActionPolicy, WebKit.WKWebpagePreferences)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKNavigationActionPolicy",
+                        "printedName": "WebKit.WKNavigationActionPolicy",
+                        "usr": "c:@E@WKNavigationActionPolicy"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKWebpagePreferences",
+                        "printedName": "WebKit.WKWebpagePreferences",
+                        "usr": "c:objc(cs)WKWebpagePreferences"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webView:decidePolicyForNavigationAction:preferences:decisionHandler:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0_15decidePolicyFor11preferences15decisionHandlerySo05WKWebD0C_So18WKNavigationActionCSo20WKWebpagePreferencesCySo0noH0V_AMtctF",
+            "moduleName": "OpenKYC",
+            "objc_name": "webView:decidePolicyForNavigationAction:preferences:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didReceive:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLAuthenticationChallenge",
+                "printedName": "Foundation.URLAuthenticationChallenge",
+                "usr": "c:objc(cs)NSURLAuthenticationChallenge"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthChallengeDisposition",
+                        "printedName": "Foundation.URLSession.AuthChallengeDisposition",
+                        "usr": "c:@E@NSURLSessionAuthChallengeDisposition"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLCredential?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLCredential",
+                            "printedName": "Foundation.URLCredential",
+                            "usr": "c:objc(cs)NSURLCredential"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webView:didReceiveAuthenticationChallenge:completionHandler:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0_10didReceive17completionHandlerySo05WKWebD0C_So28NSURLAuthenticationChallengeCySo016NSURLSessionAuthM11DispositionV_So15NSURLCredentialCSgtctF",
+            "moduleName": "OpenKYC",
+            "objc_name": "webView:didReceiveAuthenticationChallenge:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:authenticationChallenge:shouldAllowDeprecatedTLS:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLAuthenticationChallenge",
+                "printedName": "Foundation.URLAuthenticationChallenge",
+                "usr": "c:objc(cs)NSURLAuthenticationChallenge"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webView:authenticationChallenge:shouldAllowDeprecatedTLS:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0_23authenticationChallenge24shouldAllowDeprecatedTLSySo05WKWebD0C_So019NSURLAuthenticationH0CySbctF",
+            "moduleName": "OpenKYC",
+            "objc_name": "webView:authenticationChallenge:shouldAllowDeprecatedTLS:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webViewWebContentProcessDidTerminate",
+            "printedName": "webViewWebContentProcessDidTerminate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webViewWebContentProcessDidTerminate:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD29WebContentProcessDidTerminateyySo05WKWebD0CF",
+            "moduleName": "OpenKYC",
+            "objc_name": "webViewWebContentProcessDidTerminate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWindowFeatures",
+                "printedName": "WebKit.WKWindowFeatures",
+                "usr": "c:objc(cs)WKWindowFeatures"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0_09createWebD4With3for14windowFeaturesSo05WKWebD0CSgAI_So0mD13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+            "moduleName": "OpenKYC",
+            "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:requestMediaCapturePermissionFor:initiatedByFrame:type:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKSecurityOrigin",
+                "printedName": "WebKit.WKSecurityOrigin",
+                "usr": "c:objc(cs)WKSecurityOrigin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKFrameInfo",
+                "printedName": "WebKit.WKFrameInfo",
+                "usr": "c:objc(cs)WKFrameInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKMediaCaptureType",
+                "printedName": "WebKit.WKMediaCaptureType",
+                "usr": "c:@E@WKMediaCaptureType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKPermissionDecision) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKPermissionDecision",
+                    "printedName": "WebKit.WKPermissionDecision",
+                    "usr": "c:@E@WKPermissionDecision"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webView:requestMediaCapturePermissionForOrigin:initiatedByFrame:type:decisionHandler:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0_32requestMediaCapturePermissionFor16initiatedByFrame4type15decisionHandlerySo05WKWebD0C_So16WKSecurityOriginCSo11WKFrameInfoCSo07WKMediaI4TypeVySo20WKPermissionDecisionVctF",
+            "moduleName": "OpenKYC",
+            "intro_iOS": "15.0",
+            "objc_name": "webView:requestMediaCapturePermissionForOrigin:initiatedByFrame:type:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webViewDidClose",
+            "printedName": "webViewDidClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)webViewDidClose:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD8DidCloseyySo05WKWebD0CF",
+            "moduleName": "OpenKYC",
+            "objc_name": "webViewDidClose:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "safariViewControllerDidFinish",
+            "printedName": "safariViewControllerDidFinish(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SFSafariViewController",
+                "printedName": "SafariServices.SFSafariViewController",
+                "usr": "c:objc(cs)SFSafariViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OpenKYC@objc(cs)OpenKYCWebViewController(im)safariViewControllerDidFinish:",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC06safaridE9DidFinishyySo08SFSafaridE0CF",
+            "moduleName": "OpenKYC",
+            "objc_name": "safariViewControllerDidFinish:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebViewController",
+        "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC",
+        "moduleName": "OpenKYC",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Message",
+        "printedName": "Message",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Message",
+                "printedName": "OpenKYC.Message",
+                "usr": "s:7OpenKYC7MessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7OpenKYC7MessageV4name7payloadACSS_SDySSypGSgtcfc",
+            "mangledName": "$s7OpenKYC7MessageV4name7payloadACSS_SDySSypGSgtcfc",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Message",
+                "printedName": "OpenKYC.Message",
+                "usr": "s:7OpenKYC7MessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7OpenKYC7MessageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7OpenKYC7MessageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7OpenKYC7MessageV",
+        "mangledName": "$s7OpenKYC7MessageV",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpenKYCController",
+        "printedName": "OpenKYCController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCController",
+                "printedName": "OpenKYC.OpenKYCController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any OpenKYC.OpenKYCWebViewControllerDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenKYCWebViewControllerDelegate",
+                    "printedName": "any OpenKYC.OpenKYCWebViewControllerDelegate",
+                    "usr": "s:7OpenKYC0A28KYCWebViewControllerDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7OpenKYC0A13KYCControllerC3url8delegateAC10Foundation3URLV_AA0A28KYCWebViewControllerDelegate_pSgtcfc",
+            "mangledName": "$s7OpenKYC0A13KYCControllerC3url8delegateAC10Foundation3URLV_AA0A28KYCWebViewControllerDelegate_pSgtcfc",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OpenKYC.OpenKYCController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenKYCController",
+                    "printedName": "OpenKYC.OpenKYCController",
+                    "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController(im)initWithCoder:",
+            "mangledName": "$s7OpenKYC0A13KYCControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setupNavigationBar",
+            "printedName": "setupNavigationBar()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A13KYCControllerC18setupNavigationBaryyF",
+            "mangledName": "$s7OpenKYC0A13KYCControllerC18setupNavigationBaryyF",
+            "moduleName": "OpenKYC",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(navigationBarClass:toolbarClass:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCController",
+                "printedName": "OpenKYC.OpenKYCController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AnyObject.Type)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "any AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AnyObject.Type)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "any AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController(im)initWithNavigationBarClass:toolbarClass:",
+            "mangledName": "$s7OpenKYC0A13KYCControllerC18navigationBarClass07toolbarF0ACyXlXpSg_AFtcfc",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "implicit": true,
+            "intro_iOS": "5.0",
+            "objc_name": "initWithNavigationBarClass:toolbarClass:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "Available"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rootViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCController",
+                "printedName": "OpenKYC.OpenKYCController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController(im)initWithRootViewController:",
+            "mangledName": "$s7OpenKYC0A13KYCControllerC18rootViewControllerACSo06UIViewF0C_tcfc",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithRootViewController:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCController",
+                "printedName": "OpenKYC.OpenKYCController",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController(im)initWithNibName:bundle:",
+            "mangledName": "$s7OpenKYC0A13KYCControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OpenKYC@objc(cs)OpenKYCController",
+        "mangledName": "$s7OpenKYC0A13KYCControllerC",
+        "moduleName": "OpenKYC",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UINavigationController",
+        "superclassNames": [
+          "UIKit.UINavigationController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpenKYCManager",
+        "printedName": "OpenKYCManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCManager",
+                "printedName": "OpenKYC.OpenKYCManager",
+                "usr": "s:7OpenKYC0A10KYCManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7OpenKYC0A10KYCManagerC6sharedACvpZ",
+            "mangledName": "$s7OpenKYC0A10KYCManagerC6sharedACvpZ",
+            "moduleName": "OpenKYC",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenKYCManager",
+                    "printedName": "OpenKYC.OpenKYCManager",
+                    "usr": "s:7OpenKYC0A10KYCManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A10KYCManagerC6sharedACvgZ",
+                "mangledName": "$s7OpenKYC0A10KYCManagerC6sharedACvgZ",
+                "moduleName": "OpenKYC",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setUserAgent",
+            "printedName": "setUserAgent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A10KYCManagerC12setUserAgentyySSF",
+            "mangledName": "$s7OpenKYC0A10KYCManagerC12setUserAgentyySSF",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHeaderFields",
+            "printedName": "setHeaderFields(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A10KYCManagerC15setHeaderFieldsyySDyS2SGF",
+            "mangledName": "$s7OpenKYC0A10KYCManagerC15setHeaderFieldsyySDyS2SGF",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBlockingURLs",
+            "printedName": "setBlockingURLs(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A10KYCManagerC15setBlockingURLsyySaySSGF",
+            "mangledName": "$s7OpenKYC0A10KYCManagerC15setBlockingURLsyySaySSGF",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserAgent",
+            "printedName": "getUserAgent(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A10KYCManagerC12getUserAgent10completionyySSSgc_tF",
+            "mangledName": "$s7OpenKYC0A10KYCManagerC12getUserAgent10completionyySSSgc_tF",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleRedirectScheme",
+            "printedName": "handleRedirectScheme(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A10KYCManagerC20handleRedirectScheme3urlSb10Foundation3URLV_tF",
+            "mangledName": "$s7OpenKYC0A10KYCManagerC20handleRedirectScheme3urlSb10Foundation3URLV_tF",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7OpenKYC0A10KYCManagerC",
+        "mangledName": "$s7OpenKYC0A10KYCManagerC",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpenKYCWebView",
+        "printedName": "OpenKYCWebView",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constant",
+            "printedName": "Constant",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "lineHeight",
+                "printedName": "lineHeight",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7OpenKYC0A10KYCWebViewC8ConstantO10lineHeight14CoreFoundation7CGFloatVvpZ",
+                "mangledName": "$s7OpenKYC0A10KYCWebViewC8ConstantO10lineHeight12CoreGraphics7CGFloatVvpZ",
+                "moduleName": "OpenKYC",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7OpenKYC0A10KYCWebViewC8ConstantO10lineHeight14CoreFoundation7CGFloatVvgZ",
+                    "mangledName": "$s7OpenKYC0A10KYCWebViewC8ConstantO10lineHeight12CoreGraphics7CGFloatVvgZ",
+                    "moduleName": "OpenKYC",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "progressObserverKey",
+                "printedName": "progressObserverKey",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7OpenKYC0A10KYCWebViewC8ConstantO19progressObserverKeySSvpZ",
+                "mangledName": "$s7OpenKYC0A10KYCWebViewC8ConstantO19progressObserverKeySSvpZ",
+                "moduleName": "OpenKYC",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7OpenKYC0A10KYCWebViewC8ConstantO19progressObserverKeySSvgZ",
+                    "mangledName": "$s7OpenKYC0A10KYCWebViewC8ConstantO19progressObserverKeySSvgZ",
+                    "moduleName": "OpenKYC",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7OpenKYC0A10KYCWebViewC8ConstantO",
+            "mangledName": "$s7OpenKYC0A10KYCWebViewC8ConstantO",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "progressView",
+            "printedName": "progressView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIProgressView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIProgressView",
+                    "printedName": "UIKit.UIProgressView",
+                    "usr": "c:objc(cs)UIProgressView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvp",
+            "mangledName": "$s7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvp",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIProgressView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIProgressView",
+                        "printedName": "UIKit.UIProgressView",
+                        "usr": "c:objc(cs)UIProgressView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvg",
+                "mangledName": "$s7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvg",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIProgressView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIProgressView",
+                        "printedName": "UIKit.UIProgressView",
+                        "usr": "c:objc(cs)UIProgressView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvs",
+                "mangledName": "$s7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvs",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvM",
+                "mangledName": "$s7OpenKYC0A10KYCWebViewC08progressD0So010UIProgressD0CSgvM",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OpenKYC.OpenKYCWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenKYCWebView",
+                    "printedName": "OpenKYC.OpenKYCWebView",
+                    "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebView(im)initWithCoder:",
+            "mangledName": "$s7OpenKYC0A10KYCWebViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Convenience",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpenKYCWebView",
+                "printedName": "OpenKYC.OpenKYCWebView",
+                "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebView(im)initWithFrame:configuration:",
+            "mangledName": "$s7OpenKYC0A10KYCWebViewC5frame13configurationACSo6CGRectV_So05WKWebD13ConfigurationCtcfc",
+            "moduleName": "OpenKYC",
+            "overriding": true,
+            "objc_name": "initWithFrame:configuration:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OpenKYC@objc(cs)OpenKYCWebView",
+        "mangledName": "$s7OpenKYC0A10KYCWebViewC",
+        "moduleName": "OpenKYC",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)WKWebView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "WebKit.WKWebView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "String",
+        "printedName": "String",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "markHeaderKey",
+            "printedName": "markHeaderKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS7OpenKYCE13markHeaderKeySSvpZ",
+            "mangledName": "$sSS7OpenKYCE13markHeaderKeySSvpZ",
+            "moduleName": "OpenKYC",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS7OpenKYCE13markHeaderKeySSvgZ",
+                "mangledName": "$sSS7OpenKYCE13markHeaderKeySSvgZ",
+                "moduleName": "OpenKYC",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SS",
+        "mangledName": "$sSS",
+        "moduleName": "Swift",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStream",
+            "printedName": "TextOutputStream",
+            "usr": "s:s16TextOutputStreamP",
+            "mangledName": "$ss16TextOutputStreamP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStreamable",
+            "printedName": "TextOutputStreamable",
+            "usr": "s:s20TextOutputStreamableP",
+            "mangledName": "$ss20TextOutputStreamableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
+            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "StringProtocol",
+            "printedName": "StringProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UTF8View",
+                "printedName": "UTF8View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF8View",
+                    "printedName": "Swift.String.UTF8View",
+                    "usr": "s:SS8UTF8ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UTF16View",
+                "printedName": "UTF16View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF16View",
+                    "printedName": "Swift.String.UTF16View",
+                    "usr": "s:SS9UTF16ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarView",
+                "printedName": "UnicodeScalarView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnicodeScalarView",
+                    "printedName": "Swift.String.UnicodeScalarView",
+                    "usr": "s:SS17UnicodeScalarViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sy",
+            "mangledName": "$sSy"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringInterpolation",
+            "printedName": "ExpressibleByStringInterpolation",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringInterpolation",
+                "printedName": "StringInterpolation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultStringInterpolation",
+                    "printedName": "Swift.DefaultStringInterpolation",
+                    "usr": "s:s26DefaultStringInterpolationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s32ExpressibleByStringInterpolationP",
+            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1241,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1277,
+      "length": 44,
+      "value": "\"ops\/mi-v4\/proc\/open\/api\/v1\/myinfo\/web\/init\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1350,
+      "length": 9,
+      "value": "\"openkyc\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1393,
+      "length": 11,
+      "value": "\"decardIOS\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1557,
+      "length": 6,
+      "value": "\"logo\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1640,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1763,
+      "length": 7,
+      "value": "\"close\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 24,
+      "value": "\"OpenKYC.OpenKYCWebViewController\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 15413,
+      "length": 21,
+      "value": "\"navigator.userAgent\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/UserAgent\/OpenKYCUserAgent.swift",
+      "kind": "StringLiteral",
+      "offset": 241,
+      "length": 7,
+      "value": "\"0.0.1\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/UserAgent\/OpenKYCUserAgent.swift",
+      "kind": "StringLiteral",
+      "offset": 283,
+      "length": 9,
+      "value": "\"OpenKYC\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/UserAgent\/OpenKYCUserAgent.swift",
+      "kind": "StringLiteral",
+      "offset": 339,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/UserAgent\/OpenKYCUserAgent.swift",
+      "kind": "StringLiteral",
+      "offset": 512,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCController.swift",
+      "kind": "StringLiteral",
+      "offset": 108,
+      "length": 17,
+      "value": "\"OpenKYC.OpenKYCController\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCController.swift",
+      "kind": "StringLiteral",
+      "offset": 108,
+      "length": 17,
+      "value": "\"OpenKYC.OpenKYCController\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCController.swift",
+      "kind": "StringLiteral",
+      "offset": 108,
+      "length": 17,
+      "value": "\"OpenKYC.OpenKYCController\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Manager\/OpenKYCManager.swift",
+      "kind": "StringLiteral",
+      "offset": 163,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Manager\/OpenKYCManager.swift",
+      "kind": "Dictionary",
+      "offset": 215,
+      "length": 4,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Manager\/OpenKYCManager.swift",
+      "kind": "Array",
+      "offset": 261,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebView.swift",
+      "kind": "FloatLiteral",
+      "offset": 283,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 335,
+      "length": 19,
+      "value": "\"estimatedProgress\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Extensions\/URLRequest+.swift",
+      "kind": "StringLiteral",
+      "offset": 913,
+      "length": 15,
+      "value": "\"x-custom-mark\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Library\/Developer\/Xcode\/DerivedData\/open-kyc-ios-demo-gfjnqgcmwojvpzbwvecuqcntmmxe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/OpenKYC\/IntermediateBuildFilesPath\/open-kyc-ios-demo.build\/Release-iphoneos\/OpenKYC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 723,
+      "length": 7,
+      "value": "\"close\""
+    },
+    {
+      "filePath": "\/Users\/ran\/Library\/Developer\/Xcode\/DerivedData\/open-kyc-ios-demo-gfjnqgcmwojvpzbwvecuqcntmmxe\/Build\/Intermediates.noindex\/ArchiveIntermediates\/OpenKYC\/IntermediateBuildFilesPath\/open-kyc-ios-demo.build\/Release-iphoneos\/OpenKYC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 6,
+      "value": "\"logo\""
+    }
+  ]
+}

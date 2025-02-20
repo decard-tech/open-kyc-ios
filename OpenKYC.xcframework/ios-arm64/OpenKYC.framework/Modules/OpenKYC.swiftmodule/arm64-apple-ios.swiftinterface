@@ -1,0 +1,88 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OpenKYC
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import SafariServices
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol OpenKYCWebViewControllerDelegate : AnyObject {
+  func openKYCWebViewController(_ controller: OpenKYC.OpenKYCWebViewController, didReceiveMessage message: Swift.String)
+  func openKYCWebViewController(_ controller: OpenKYC.OpenKYCWebViewController, didReceiveDeepLink deepLink: Foundation.URL)
+  func openKYCWebViewController(_ controller: OpenKYC.OpenKYCWebViewController, didReceiveMessage name: Swift.String, payload: [Swift.String : Any]?)
+}
+extension OpenKYC.OpenKYCWebViewControllerDelegate {
+  public func openKYCWebViewController(_ controller: OpenKYC.OpenKYCWebViewController, didReceiveMessage message: Swift.String)
+  public func openKYCWebViewController(_ controller: OpenKYC.OpenKYCWebViewController, didReceiveDeepLink deepLink: Foundation.URL)
+  public func openKYCWebViewController(_ controller: OpenKYC.OpenKYCWebViewController, didReceiveMessage name: Swift.String, payload: [Swift.String : Any]?)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class OpenKYCWebViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var webView: WebKit.WKWebView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any OpenKYC.OpenKYCWebViewControllerDelegate)?
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder _: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) public func load(request: Foundation.URLRequest)
+  @objc @_Concurrency.MainActor(unsafe) open func selectClose()
+}
+extension OpenKYC.OpenKYCWebViewController : WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
+extension OpenKYC.OpenKYCWebViewController : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, preferences: WebKit.WKWebpagePreferences, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy, WebKit.WKWebpagePreferences) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_: WebKit.WKWebView, authenticationChallenge _: Foundation.URLAuthenticationChallenge, shouldAllowDeprecatedTLS decisionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webViewWebContentProcessDidTerminate(_: WebKit.WKWebView)
+}
+extension OpenKYC.OpenKYCWebViewController : WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith _: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures _: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webViewDidClose(_: WebKit.WKWebView)
+}
+extension OpenKYC.OpenKYCWebViewController : SafariServices.SFSafariViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+}
+public struct Message : Swift.Decodable {
+  public init(name: Swift.String, payload: [Swift.String : Any]?)
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_Concurrency.MainActor(unsafe) open class OpenKYCController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public init(url: Foundation.URL, delegate: (any OpenKYC.OpenKYCWebViewControllerDelegate)?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setupNavigationBar()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class OpenKYCManager {
+  public static let shared: OpenKYC.OpenKYCManager
+  public func setUserAgent(_ userAgent: Swift.String)
+  public func setHeaderFields(_ headerFields: [Swift.String : Swift.String])
+  public func setBlockingURLs(_ blockingURLs: [Swift.String])
+  public func getUserAgent(completion: @escaping (Swift.String?) -> Swift.Void)
+  public func handleRedirectScheme(url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OpenKYCWebView : WebKit.WKWebView {
+  @objc deinit
+  public enum Constant {
+    public static let lineHeight: CoreFoundation.CGFloat
+    public static let progressObserverKey: Swift.String
+  }
+  @_Concurrency.MainActor(unsafe) public var progressView: UIKit.UIProgressView?
+  @_Concurrency.MainActor(unsafe) @objc required convenience dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, configuration: WebKit.WKWebViewConfiguration)
+}
+extension Swift.String {
+  public static let markHeaderKey: Swift.String
+}
