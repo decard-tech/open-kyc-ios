@@ -1,0 +1,6 @@
+module Pods_open_kyc_ios_demo {
+  umbrella header "Pods-open-kyc-ios-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
