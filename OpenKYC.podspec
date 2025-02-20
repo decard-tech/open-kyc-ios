@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/decard-tech/open-kyc-ios"
-  spec.license         = { :type => 'MIT', :text => 'MIT' }
+  spec.license      = { :type => 'MIT', :text => 'MIT' }
   spec.author       = { "Ryan" => "ryan.an@dcsserv.com" }
   
   spec.source       = { 

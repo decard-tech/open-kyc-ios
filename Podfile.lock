@@ -1,0 +1,16 @@
+PODS:
+  - OpenKYC (1.0.0)
+
+DEPENDENCIES:
+  - OpenKYC (~> 1.0.0)
+
+SPEC REPOS:
+  trunk:
+    - OpenKYC
+
+SPEC CHECKSUMS:
+  OpenKYC: 33d87cf4acc36c1ebc5eca30ddbcd44daf5ea3e7
+
+PODFILE CHECKSUM: f5c179d406d8693503f46ed8e227ac1c41707043
+
+COCOAPODS: 1.16.2
