@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         OpenKYCManager.shared.getUserAgent { userAgent in
-            print("\(String(describing: userAgent))")
+            guard let ua = userAgent else { return }
+            let userAgentString = ua + "company" + "version"
+            OpenKYCManager.shared.setUserAgent(userAgentString)
         }
         return true
     }
