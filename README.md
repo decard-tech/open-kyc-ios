@@ -22,6 +22,7 @@ Manually Installation
 
 Download the [OpenKYC](https://github.com/decard-tech/open-kyc-ios/releases/download/1.0.0/OpenKYC-1.0.0.zip)
 ## 2.2 Setup Scheme
+<img width="666" alt="截屏2025-02-21 13 23 20" src="https://github.com/user-attachments/assets/9e6696f8-69a4-4a91-aefd-d5b716c6aa35" />
 
 In your Info.plist file:
 
