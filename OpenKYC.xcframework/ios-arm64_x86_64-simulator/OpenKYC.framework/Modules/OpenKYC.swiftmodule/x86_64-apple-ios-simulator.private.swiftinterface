@@ -54,8 +54,12 @@ extension OpenKYC.OpenKYCWebViewController : WebKit.WKUIDelegate {
 extension OpenKYC.OpenKYCWebViewController : SafariServices.SFSafariViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
 }
+public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct Message : Swift.Decodable {
-  public init(name: Swift.String, payload: [Swift.String : Any]?)
+  public init(name: Swift.String, payload: [Swift.String : OpenKYC.AnyDecodable]?)
   public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_Concurrency.MainActor(unsafe) open class OpenKYCController : UIKit.UINavigationController {

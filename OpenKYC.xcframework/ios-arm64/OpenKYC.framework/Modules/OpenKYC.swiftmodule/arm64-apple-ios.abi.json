@@ -1268,6 +1268,99 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AnyDecodable",
+        "printedName": "AnyDecodable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7OpenKYC12AnyDecodableV5valueypvp",
+            "mangledName": "$s7OpenKYC12AnyDecodableV5valueypvp",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC12AnyDecodableV5valueypvg",
+                "mangledName": "$s7OpenKYC12AnyDecodableV5valueypvg",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyDecodable",
+                "printedName": "OpenKYC.AnyDecodable",
+                "usr": "s:7OpenKYC12AnyDecodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7OpenKYC12AnyDecodableV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7OpenKYC12AnyDecodableV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7OpenKYC12AnyDecodableV",
+        "mangledName": "$s7OpenKYC12AnyDecodableV",
+        "moduleName": "OpenKYC",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Message",
         "printedName": "Message",
         "children": [
@@ -1291,12 +1384,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : OpenKYC.AnyDecodable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : OpenKYC.AnyDecodable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1306,8 +1399,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "AnyDecodable",
+                        "printedName": "OpenKYC.AnyDecodable",
+                        "usr": "s:7OpenKYC12AnyDecodableV"
                       }
                     ],
                     "usr": "s:SD"
@@ -1317,8 +1411,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7OpenKYC7MessageV4name7payloadACSS_SDySSypGSgtcfc",
-            "mangledName": "$s7OpenKYC7MessageV4name7payloadACSS_SDySSypGSgtcfc",
+            "usr": "s:7OpenKYC7MessageV4name7payloadACSS_SDySSAA12AnyDecodableVGSgtcfc",
+            "mangledName": "$s7OpenKYC7MessageV4name7payloadACSS_SDySSAA12AnyDecodableVGSgtcfc",
             "moduleName": "OpenKYC",
             "declAttributes": [
               "AccessControl"
@@ -1347,9 +1441,7 @@
             "usr": "s:7OpenKYC7MessageV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s7OpenKYC7MessageV4fromACs7Decoder_p_tKcfc",
             "moduleName": "OpenKYC",
-            "declAttributes": [
-              "AccessControl"
-            ],
+            "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
@@ -3129,6 +3221,13 @@
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2067,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
       "offset": 1127,
       "length": 24,
@@ -3137,7 +3236,7 @@
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15413,
+      "offset": 14649,
       "length": 21,
       "value": "\"navigator.userAgent\""
     },
