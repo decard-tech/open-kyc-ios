@@ -5,7 +5,7 @@ platform :ios, '14.0'
 inhibit_all_warnings!
 
 target 'open-kyc-ios-demo' do
-  pod 'OpenKYC', '~> 1.0.0'
+  pod 'OpenKYC', '~> 1.0.1'
 
 end
 
