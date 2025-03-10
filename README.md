@@ -12,7 +12,7 @@ CocoaPods Installation
 
 To install OpenKYC SDK via CocoaPods, add the following line to your Podfile:
 ```
-   pod 'OpenKYC', '~> 1.0.0'
+   pod 'OpenKYC', '~> 1.0.1'
 ```
 Then, run the following command in the terminal to install the SDK:
 ```
