@@ -1,6 +1,6 @@
 # OpenKYC SDK Integration & Usage Guide (iOS)
 
-[Android Guide](./docs/README.md)。
+[Android Guide](./docs/README.md)
 
 # 1. Introduction
 
