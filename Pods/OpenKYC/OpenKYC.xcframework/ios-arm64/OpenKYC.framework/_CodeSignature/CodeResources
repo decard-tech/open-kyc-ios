@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		w1cAjUARsharmsRyDQj6EJkll2k=
+		yaexoRd08UB3or34rdSawYavBBs=
 		</data>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		a7FYECxj9V6kX35zQqwx72/jZbg=
+		WwDw4kl0elLXSuKXG9T7g191rrU=
 		</data>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		a7FYECxj9V6kX35zQqwx72/jZbg=
+		WwDw4kl0elLXSuKXG9T7g191rrU=
 		</data>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		epjJCbNmoJivPV2SUWgi/MnwLbU=
+		10UOsM60fwpOI+BEuvbrD5kKm/Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -46,14 +46,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D49KCxA0w8jC/s7HcrN4guAriQp5spMvZnTWCU+SYJU=
+			3xZhxNjedbJT6s12JBNqb647LkYHbySRqt5k8/4X2Os=
 			</data>
 		</dict>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Bw6xP7mHvfe5/hjqFR3N4fxkcvDOeSAaK1TF9zJENQ=
+			xkCvKY2QO4d5q/E4nY+/dODiOEdiq+puXM5QauroA80=
 			</data>
 		</dict>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -67,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Bw6xP7mHvfe5/hjqFR3N4fxkcvDOeSAaK1TF9zJENQ=
+			xkCvKY2QO4d5q/E4nY+/dODiOEdiq+puXM5QauroA80=
 			</data>
 		</dict>
 		<key>Modules/OpenKYC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wj4I18fBSHb0gk1HXbkFVZPmg7c0prxbbMIWKDCYcZo=
+			gI9RhNddqqT37xfU1WvBlPBwEpecEjf41n9SsrLpBEw=
 			</data>
 		</dict>
 	</dict>

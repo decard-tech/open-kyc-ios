@@ -1,5 +1,7 @@
 # OpenKYC SDK Integration & Usage Guide (iOS)
 
+[Android Guide](./docs/README.md)。
+
 # 1. Introduction
 
 OpenKYC offers essential features for identity verification and card management. It enables businesses to perform identity verification through document checks, facial recognition, and selfie authentication. Users can also apply for cards, track application status, and manage their card information. The platform supports KYC compliance and fraud prevention, ensuring secure and reliable processes.
