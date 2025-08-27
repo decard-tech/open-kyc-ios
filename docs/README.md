@@ -1,25 +1,25 @@
-# OpenKYC SDK Android 集成指南
+# OpenKYC SDK Android Integration Guide
 
-## 0. 简介
-OpenKYC SDK 是一个用于 Android/iOS 平台的开放式 KYC 验证工具包,提供了便捷的 WebView 集成方案。此文档为Android端集成指南。
+## 0. Introduction
+OpenKYC SDK is an open KYC verification toolkit for Android/iOS platforms, providing convenient WebView integration solution. This document is the Android integration guide.
 
-## 1. 当前版本
+## 1. Current Version
 
 ```gradle
 1.0.0
 ```
 
-## 2. 系统要求
+## 2. System Requirements
 
-- Android API Level 23 (Android 6.0) 及以上
-- AndroidX 支持
-- Kotlin 项目支持
+- Android API Level 23 (Android 6.0) and above
+- AndroidX support
+- Kotlin project support
 
-## 3. 集成步骤
+## 3. Integration Steps
 
-### 3.1 添加Maven仓库
+### 3.1 Add Maven Repository
 
-在项目根目录的 `settings.gradle` 或 `build.gradle` 中添加, 其中 `YOUR-USERNAME` 和 `YOUR-PASSWORD` 请联系Decard获取:
+Add to your project root's `settings.gradle` or `build.gradle`, where `YOUR-USERNAME` and `YOUR-PASSWORD` can be obtained from Decard:
     
 ```gradle
 repositories {
@@ -33,9 +33,9 @@ repositories {
 }
 ```
 
-### 3.2 添加依赖
+### 3.2 Add Dependency
 
-在app模块或其他需要使用sdk的模块的 build.gradle 文件中添加:
+Add to build.gradle file of app module or other modules that need to use the SDK:
 
 ```gradle
 implementation 'com.dcs.decard:lib-openkyc:${version}'
@@ -44,18 +44,21 @@ implementation 'com.dcs.decard:lib-openkyc:${version}'
 // implementation 'com.dcs.decard:lib-openkyc:1.0.0'
 ```
 
-## 4. 基本用法
+## 4. Basic Usage
 
-### 4.1 初始化并启动WebView （DSL风格，推荐）
+### 4.1 Initialize and Launch WebView (DSL Style, Recommended)
 
 ```kotlin
 val launcher = buildOpenKycLauncher {
-    setUrl("https://your-kyc-url.com") // 通过 ‘/redirect/v1/guidance-link’ 接口获取的引导页链接
-    setUserAgent("Your-User-Agent") // 自定义的webview的userAgent
-    addHeader("Your-Header-Key", "Your-Header-Value") // 可选，添加加载页面时额外的请求头
+    setUrl("https://your-kyc-url.com") // Guidance page link obtained from '/redirect/v1/guidance-link' API
+    setUserAgent("Your-User-Agent") // Custom WebView userAgent
+    addHeader("Your-Header-Key", "Your-Header-Value") // Optional, add extra request headers when loading page
     setCallback(object : OpenKycCallback {
         override fun onEvent(eventName: String, payload: Map<String, String>?) {
-            // 处理回调事件
+            // Handle callback events
+            if (eventName == "DECARD_OPENAPI_CLOSE") {
+                launcher?.finish()
+            }
         }
     })
 }
@@ -63,32 +66,35 @@ val launcher = buildOpenKycLauncher {
 launcher.launch(context)
 ```
 
-### 4.2 初始化并启动WebView （Builder模式）
+### 4.2 Initialize and Launch WebView (Builder Pattern)
 
 ```kotlin
-// 使用 Builder 模式构建
+// Build using Builder pattern
 val launcher = OpenKycLauncher.Builder()
     .setUrl("https://your-kyc-url.com")
     .setUserAgent("Your-User-Agent") 
     .addHeader("Your-Header-Key", "Your-Header-Value")
     .setCallback(object : OpenKycCallback {
         override fun onEvent(eventName: String, payload: Map<String, String>?) {
-            // 处理回调事件
+            // Handle callback events
+            if (eventName == "DECARD_OPENAPI_CLOSE") {
+                launcher?.finish()
+            }
         }
     })
     .build()
 
-// 启动 WebView
+// Launch WebView
 launcher.launch(context)
 ```
 
-### 4.3 关闭WebView
+### 4.3 Close WebView
 
 ```kotlin
 launcher.finish()
 ```
 
-## 5. 示例代码
+## 5. Sample Code
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -121,10 +127,13 @@ class MainActivity : AppCompatActivity() {
         tempView.destroy()
         return res
     }
+
+    // Your User Agent should look like this:
+    // Mozilla/5.0 (Linux; Android 15; SM-S938N Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.143 Mobile Safari/537.36; appname/v2.64.1
 }
 ```
 
 
-## 6. 技术支持
+## 6. Technical Support
 
-如有任何技术问题，请联系 DeCard 技术支持团队。
+For any technical issues, please contact DeCard technical support team.
