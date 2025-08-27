@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
         
         launcher = buildOpenKycLauncher {
             setUrl("https://your-kyc-url.com")
-            setUserAgent("YourApp/1.0")
+            setUserAgent("Your-User-Agent")
             setCallback(object : OpenKycCallback {
                 override fun onEvent(eventName: String, payload: Map<String, String>?) {
                     when(eventName) {
@@ -111,6 +111,15 @@ class MainActivity : AppCompatActivity() {
         }
         
         launcher?.launch(this)
+    }
+
+    private const val CUSTOM_UA_SUFFIX = " YourApp/0.0.1 (Android 0.0.1)"
+
+    fun getCustomUA(context: Context): String {
+        val tempView = WebView(context)
+        val res = tempView.settings.userAgentString + CUSTOM_UA_SUFFIX
+        tempView.destroy()
+        return res
     }
 }
 ```
