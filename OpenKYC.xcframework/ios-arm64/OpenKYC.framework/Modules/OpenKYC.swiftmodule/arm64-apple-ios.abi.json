@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "OpenKYC",
+    "printedName": "OpenKYC",
     "children": [
       {
         "kind": "Import",
@@ -34,6 +34,68 @@
         "printedName": "SafariServices",
         "declKind": "Import",
         "moduleName": "OpenKYC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpenKYCViewProvider",
+        "printedName": "OpenKYCViewProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "titleView",
+            "printedName": "titleView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7OpenKYC0A15KYCViewProviderP9titleViewSo6UIViewCSgyF",
+            "mangledName": "$s7OpenKYC0A15KYCViewProviderP9titleViewSo6UIViewCSgyF",
+            "moduleName": "OpenKYC",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenKYC.OpenKYCViewProvider>",
+            "sugared_genericSig": "<Self where Self : OpenKYC.OpenKYCViewProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7OpenKYC0A15KYCViewProviderP",
+        "mangledName": "$s7OpenKYC0A15KYCViewProviderP",
+        "moduleName": "OpenKYC",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -298,6 +360,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -322,6 +400,7 @@
             "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC03webD0So05WKWebD0Cvp",
             "moduleName": "OpenKYC",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Lazy",
               "AccessControl"
@@ -407,8 +486,9 @@
             "moduleName": "OpenKYC",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
             ],
@@ -495,6 +575,111 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "provider",
+            "printedName": "provider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any OpenKYC.OpenKYCViewProvider)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvp",
+            "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvp",
+            "moduleName": "OpenKYC",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OpenKYC.OpenKYCViewProvider)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpenKYCViewProvider",
+                        "printedName": "any OpenKYC.OpenKYCViewProvider",
+                        "usr": "s:7OpenKYC0A15KYCViewProviderP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvg",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvg",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OpenKYC.OpenKYCViewProvider)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpenKYCViewProvider",
+                        "printedName": "any OpenKYC.OpenKYCViewProvider",
+                        "usr": "s:7OpenKYC0A15KYCViewProviderP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvs",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvs",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvM",
+                "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC8providerAA0A15KYCViewProvider_pSgvM",
+                "moduleName": "OpenKYC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "viewDidLoad",
             "printedName": "viewDidLoad()",
@@ -514,6 +699,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -542,6 +728,7 @@
             "mangledName": "$s7OpenKYC0A20KYCWebViewControllerC4load7requesty10Foundation10URLRequestV_tF",
             "moduleName": "OpenKYC",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -564,6 +751,7 @@
             "moduleName": "OpenKYC",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -620,6 +808,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -656,6 +845,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -711,6 +901,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -785,6 +976,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -861,6 +1053,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -916,6 +1109,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -947,6 +1141,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1005,6 +1200,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1073,6 +1269,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Available"
@@ -1105,6 +1302,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1136,6 +1334,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1149,6 +1348,7 @@
         "moduleName": "OpenKYC",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -1161,6 +1361,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1352,6 +1566,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1456,6 +1684,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1481,7 +1723,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(url:delegate:)",
+            "printedName": "init(url:delegate:provider:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1508,13 +1750,29 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any OpenKYC.OpenKYCViewProvider)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenKYCViewProvider",
+                    "printedName": "any OpenKYC.OpenKYCViewProvider",
+                    "usr": "s:7OpenKYC0A15KYCViewProviderP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7OpenKYC0A13KYCControllerC3url8delegateAC10Foundation3URLV_AA0A28KYCWebViewControllerDelegate_pSgtcfc",
-            "mangledName": "$s7OpenKYC0A13KYCControllerC3url8delegateAC10Foundation3URLV_AA0A28KYCWebViewControllerDelegate_pSgtcfc",
+            "usr": "s:7OpenKYC0A13KYCControllerC3url8delegate8providerAC10Foundation3URLV_AA0A28KYCWebViewControllerDelegate_pSgAA0A15KYCViewProvider_pSgtcfc",
+            "mangledName": "$s7OpenKYC0A13KYCControllerC3url8delegate8providerAC10Foundation3URLV_AA0A28KYCWebViewControllerDelegate_pSgAA0A15KYCViewProvider_pSgtcfc",
             "moduleName": "OpenKYC",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1555,6 +1813,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Required"
@@ -1578,6 +1837,7 @@
             "moduleName": "OpenKYC",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1646,6 +1906,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "Available"
@@ -1680,6 +1941,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -1735,6 +1997,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -1747,6 +2010,7 @@
         "moduleName": "OpenKYC",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -1759,6 +2023,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2071,7 +2349,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2201,6 +2495,22 @@
             "moduleName": "OpenKYC",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2229,8 +2539,9 @@
             "moduleName": "OpenKYC",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -2349,6 +2660,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "Required",
@@ -2389,6 +2701,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -2402,6 +2715,7 @@
         "moduleName": "OpenKYC",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -2415,6 +2729,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2466,13 +2794,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -2484,6 +2805,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -2610,6 +2938,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -3149,12 +3491,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -3173,70 +3509,63 @@
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1241,
+      "offset": 1325,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1277,
+      "offset": 1361,
       "length": 44,
       "value": "\"ops\/mi-v4\/proc\/open\/api\/v1\/myinfo\/web\/init\""
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1350,
+      "offset": 1434,
       "length": 9,
       "value": "\"openkyc\""
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
+      "offset": 1477,
       "length": 11,
       "value": "\"decardIOS\""
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1557,
+      "offset": 1641,
       "length": 6,
       "value": "\"logo\""
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1640,
+      "offset": 1724,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1763,
+      "offset": 1847,
       "length": 7,
       "value": "\"close\""
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2067,
+      "offset": 2151,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1127,
-      "length": 24,
-      "value": "\"OpenKYC.OpenKYCWebViewController\""
-    },
-    {
-      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14649,
+      "offset": 14809,
       "length": 21,
       "value": "\"navigator.userAgent\""
     },
@@ -3267,27 +3596,6 @@
       "offset": 512,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCController.swift",
-      "kind": "StringLiteral",
-      "offset": 108,
-      "length": 17,
-      "value": "\"OpenKYC.OpenKYCController\""
-    },
-    {
-      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCController.swift",
-      "kind": "StringLiteral",
-      "offset": 108,
-      "length": 17,
-      "value": "\"OpenKYC.OpenKYCController\""
-    },
-    {
-      "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Controller\/OpenKYCController.swift",
-      "kind": "StringLiteral",
-      "offset": 108,
-      "length": 17,
-      "value": "\"OpenKYC.OpenKYCController\""
     },
     {
       "filePath": "\/Users\/ran\/Desktop\/company\/open-kyc-ios\/open-sdk-ios-demo\/OpenKYC\/Manager\/OpenKYCManager.swift",
