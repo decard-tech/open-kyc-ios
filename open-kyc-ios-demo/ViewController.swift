@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         guard let url = URL(string: urlString) else {
             return
         }
-        let controller = OpenKYCController(url: url, delegate: self)
+        let controller = OpenKYCController(url: url, delegate: self, provider: self)
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
     }
@@ -50,5 +50,16 @@ extension ViewController: OpenKYCWebViewControllerDelegate {
         payload: [String: Any]?
     ) {
         
+    }
+}
+
+extension ViewController: OpenKYCViewProvider {
+    
+    func titleView() -> UIView? {
+        let label = UILabel()
+        label.text = "自定义标题"
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        return label
     }
 }

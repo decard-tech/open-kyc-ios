@@ -1,6 +1,6 @@
  Pod::Spec.new do |spec|
   spec.name         = "OpenKYC"
-  spec.version      = "1.0.1"
+  spec.version      = "1.1.0"
   spec.summary      = "OpenKYC - KYC & Card Verification Framework for iOS"
   
   spec.description  = <<-DESC

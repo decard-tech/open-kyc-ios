@@ -1,5 +1,7 @@
 # OpenKYC SDK Integration & Usage Guide (iOS)
 
+[Android Guide](./docs/README.md)
+
 # 1. Introduction
 
 OpenKYC offers essential features for identity verification and card management. It enables businesses to perform identity verification through document checks, facial recognition, and selfie authentication. Users can also apply for cards, track application status, and manage their card information. The platform supports KYC compliance and fraud prevention, ensuring secure and reliable processes.
@@ -12,7 +14,7 @@ CocoaPods Installation
 
 To install OpenKYC SDK via CocoaPods, add the following line to your Podfile:
 ```
-   pod 'OpenKYC', '~> 1.0.0'
+   pod 'OpenKYC', '~> 1.0.1'
 ```
 Then, run the following command in the terminal to install the SDK:
 ```
@@ -88,6 +90,7 @@ This protocol defines the methods that allow the implementing class to respond t
     - name: A String representing the name or type of the message.
     - payload: An optional dictionary ([String : Any]?) containing additional data related to the message. This can be any additional information sent from the web content (e.g., user details, status updates, etc.).
 - **Use Case**: This method is ideal for handling structured messages with both a name and an associated payload. You can use the name to differentiate between different types of messages and the payload to access any associated data.
+
 ## 3.3 Handling Redirect URLs
 
 If your application supports redirects (for example, in the case of OAuth), you will need to handle URL redirects in your AppDelegate.swift:
@@ -102,6 +105,37 @@ func application(_ app: UIApplication,
 }
 ```
 This method processes the URL after a redirect from an authentication provider, allowing the SDK to handle the response.
+
+## 3.4 protocol
+
+### 1. Use Case
+```swift
+public protocol OpenKYCTitleViewProvider: AnyObject {
+    func titleView() -> UIView?
+}
+
+extension ViewController: OpenKYCTitleViewProvider {
+    func titleView() -> UIView? {
+        let label = UILabel()
+        label.text = "我的标题"
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        return label
+    }
+}
+
+let controller = OpenKYCController(
+    url: url, 
+    delegate: self, 
+    titleViewProvider: self
+)
+```
+
+### 3. Use nil 
+
+```swift
+let controller = OpenKYCController(url: url, delegate: self)
+```
 
 # 4. Frequently Asked Questions
 
