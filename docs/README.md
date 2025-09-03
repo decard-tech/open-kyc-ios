@@ -6,7 +6,7 @@ OpenKYC SDK is an open KYC verification toolkit for Android/iOS platforms, provi
 ## 1. Current Version
 
 ```gradle
-1.0.0
+1.1.0
 ```
 
 ## 2. System Requirements
@@ -41,7 +41,7 @@ Add to build.gradle file of app module or other modules that need to use the SDK
 implementation 'com.dcs.decard:lib-openkyc:${version}'
 
 // for example:
-// implementation 'com.dcs.decard:lib-openkyc:1.0.0'
+// implementation 'com.dcs.decard:lib-openkyc:1.1.0'
 ```
 
 ## 4. Basic Usage
@@ -53,6 +53,8 @@ val launcher = buildOpenKycLauncher {
     setUrl("https://your-kyc-url.com") // Guidance page link obtained from '/redirect/v1/guidance-link' API
     setUserAgent("Your-User-Agent") // Custom WebView userAgent
     addHeader("Your-Header-Key", "Your-Header-Value") // Optional, add extra request headers when loading page
+    setShowDecardLogo(true) // Optional, show DeCard logo in toolbar (default: true)
+    setToolbarTitle("KYC Verification") // Optional, set custom toolbar title (if set, logo will be hidden)
     setCallback(object : OpenKycCallback {
         override fun onEvent(eventName: String, payload: Map<String, String>?) {
             // Handle callback events
@@ -74,6 +76,8 @@ val launcher = OpenKycLauncher.Builder()
     .setUrl("https://your-kyc-url.com")
     .setUserAgent("Your-User-Agent") 
     .addHeader("Your-Header-Key", "Your-Header-Value")
+    .setShowDecardLogo(true) // Optional, show DeCard logo in toolbar (default: true)
+    .setToolbarTitle("KYC Verification") // Optional, set custom toolbar title (if set, logo will be hidden)
     .setCallback(object : OpenKycCallback {
         override fun onEvent(eventName: String, payload: Map<String, String>?) {
             // Handle callback events
@@ -94,18 +98,40 @@ launcher.launch(context)
 launcher.finish()
 ```
 
-## 5. Sample Code
+## 5. API Reference
+
+### 5.1 Configuration Methods
+
+| Method | Required | Default | Description |
+|--------|----------|---------|-------------|
+| `setUrl(String)` | ✅ | - | Set the KYC guidance page URL |
+| `setUserAgent(String)` | ✅ | - | Set custom WebView user agent |
+| `addHeader(String, String)` | ❌ | - | Add extra HTTP headers |
+| `setShowDecardLogo(Boolean)` | ❌ | `true` | Show/hide DeCard logo in toolbar |
+| `setToolbarTitle(String)` | ❌ | `null` | Set custom toolbar title (overrides logo) |
+| `setCallback(OpenKycCallback)` | ❌ | - | Set event callback handler |
+
+### 5.2 Toolbar Customization
+
+**Logo Display Rules:**
+- When `setToolbarTitle()` is set: Custom title is shown, logo is hidden
+- When `setToolbarTitle()` is not set and `setShowDecardLogo(true)`: DeCard logo is shown
+- When `setToolbarTitle()` is not set and `setShowDecardLogo(false)`: Empty toolbar
+
+## 6. Sample Code
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
     private var launcher: OpenKycLauncher? = null
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
+
         launcher = buildOpenKycLauncher {
             setUrl("https://your-kyc-url.com")
             setUserAgent("Your-User-Agent")
+            setShowDecardLogo(false) // Hide DeCard logo
+            setToolbarTitle("Identity Verification") // Set custom title
             setCallback(object : OpenKycCallback {
                 override fun onEvent(eventName: String, payload: Map<String, String>?) {
                     when(eventName) {
@@ -115,7 +141,7 @@ class MainActivity : AppCompatActivity() {
                 }
             })
         }
-        
+
         launcher?.launch(this)
     }
 
@@ -134,6 +160,6 @@ class MainActivity : AppCompatActivity() {
 ```
 
 
-## 6. Technical Support
+## 7. Technical Support
 
 For any technical issues, please contact DeCard technical support team.
