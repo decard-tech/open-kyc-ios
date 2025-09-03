@@ -22,7 +22,7 @@ Then, run the following command in the terminal to install the SDK:
 ```
 Manually Installation
 
-Download the [OpenKYC](https://github.com/decard-tech/open-kyc-ios/releases/download/1.0.0/OpenKYC-1.0.0.zip)
+Download the [OpenKYC](https://github.com/decard-tech/open-kyc-ios/releases/download/1.1.0/OpenKYC-1.1.0.zip)
 ## 2.2 Setup Scheme
 <img width="666" alt="截屏2025-02-21 13 23 20" src="https://github.com/user-attachments/assets/9e6696f8-69a4-4a91-aefd-d5b716c6aa35" />
 
@@ -106,18 +106,18 @@ func application(_ app: UIApplication,
 ```
 This method processes the URL after a redirect from an authentication provider, allowing the SDK to handle the response.
 
-## 3.4 protocol
+## 3.4 Protocol for UI
 
 ### 1. Use Case
 ```swift
-public protocol OpenKYCTitleViewProvider: AnyObject {
+public protocol OpenKYCViewProvider: AnyObject {
     func titleView() -> UIView?
 }
 
-extension ViewController: OpenKYCTitleViewProvider {
+extension ViewController: OpenKYCViewProvider {
     func titleView() -> UIView? {
         let label = UILabel()
-        label.text = "我的标题"
+        label.text = "title"
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
@@ -126,12 +126,12 @@ extension ViewController: OpenKYCTitleViewProvider {
 
 let controller = OpenKYCController(
     url: url, 
-    delegate: self, 
-    titleViewProvider: self
+    delegate: self,
+    provider: self
 )
 ```
 
-### 3. Use nil 
+### 3. When not implemented, the default titleview is used
 
 ```swift
 let controller = OpenKYCController(url: url, delegate: self)
@@ -144,4 +144,3 @@ Q1: How do I obtain the API url?
 
 Q2: What should I do if the identity verification fails?
     •    Make sure the device’s camera and microphone are working properly and the necessary permissions have been granted. If the issue persists, retry the verification process.
-
